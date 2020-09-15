@@ -1,0 +1,13 @@
+/*
+ * Public API Surface of plugin
+ */
+export * from './lib/plugin.service';
+export * from './lib/plugin.component';
+export * from './lib/plugin.module';
+export default class MyPlugin {
+    constructor() {
+        this.Name = "My Plugin";
+        this.ComponentFile = "";
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL3BsdWdpbi8iLCJzb3VyY2VzIjpbInB1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLHNCQUFzQixDQUFDO0FBQ3JDLGNBQWMsd0JBQXdCLENBQUM7QUFDdkMsY0FBYyxxQkFBcUIsQ0FBQztBQUVwQyxNQUFNLENBQUMsT0FBTyxPQUFPLFFBQVE7SUFJekI7UUFIQSxTQUFJLEdBQUcsV0FBVyxDQUFDO1FBQ25CLGtCQUFhLEdBQUcsRUFBRSxDQUFBO0lBRUYsQ0FBQztDQU9sQiIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2YgcGx1Z2luXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvcGx1Z2luLnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvcGx1Z2luLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9wbHVnaW4ubW9kdWxlJztcblxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgTXlQbHVnaW4ge1xuICAgIE5hbWUgPSBcIk15IFBsdWdpblwiO1xuICAgIENvbXBvbmVudEZpbGUgPSBcIlwiXG5cbiAgICBjb25zdHJ1Y3RvcigpIHsgfVxuXG4gICAgLy8gZ2V0IEZpbGVzKCkge1xuXG4gICAgLy8gfVxuXG4gICAgXG4gIH0iXX0=

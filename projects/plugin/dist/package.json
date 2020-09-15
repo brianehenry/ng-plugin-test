@@ -1,0 +1,23 @@
+{
+  "name": "plugin",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7"
+  },
+  "main": "bundles/plugin.umd.js",
+  "module": "fesm5/plugin.js",
+  "es2015": "fesm2015/plugin.js",
+  "esm5": "esm5/plugin.js",
+  "esm2015": "esm2015/plugin.js",
+  "fesm5": "fesm5/plugin.js",
+  "fesm2015": "fesm2015/plugin.js",
+  "typings": "plugin.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}
