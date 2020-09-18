@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { PluginService } from './plugin.service';
 
 @Component({
@@ -9,11 +9,18 @@ import { PluginService } from './plugin.service';
 export class AppComponent {
   title = 'ng-plugin-test';
 
+  @ViewChild('container', { static: true }) containerElement: ElementRef;
+
   constructor(
     private pluginService: PluginService
   ) { }
 
   ngOnInit(): void {
-    this.pluginService.LoadPlugins().subscribe();
+    this.pluginService.LoadPlugins().subscribe({
+      complete: () => {
+        this.pluginService.LoadPluginComponent()
+          .then(({ host }) => this.containerElement.nativeElement.appendChild(host));
+      }
+    });
   }
 }

@@ -1,6 +1,6 @@
 export default class MyPlugin {
     Name = "My Plugin";
-    ComponentFile = "./lib/plugin.component"
+    ComponentFile = "/plugins/my-plugin/bundles/plugin.umd.js"
 
     constructor() { }
 
